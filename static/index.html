@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Chat</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center bcol">
+                <h1 class="fcol py-2">Chat</h1>
+            </div>
+        </div>
+
+        <div class="row mt-3 mx-5">
+            <div class="col-sm-12">
+                <div id="messages" class="messages px-2 py-2"></div>
+            </div>
+        </div>
+
+        <div id="enter" class="row mt-3 ml-5">
+            <div class="form-inline col-sm-12">
+                <input type="text" id="usr" class="form-control col-sm-10" placeholder="Username" maxlength="35">
+                <button id="joinbtn" class="btn btn-success ml-3 col-sm-1">Join</button>
+            </div>
+        </div>
+
+        <div id="umsg" class="row mt-3 ml-5" style="display: none;">
+            <div class="form-inline col-sm-12">
+                <input type="text" id="msg" class="form-control col-sm-10" placeholder="Your message...">
+                <button id="sendbtn" class="btn btn-success ml-3 col-sm-1">Send</button>
+            </div>
+        </div>
+
+        <div class="row col-sm-10 ml-5 mt-1">
+            <div id="mbox" class="alert alert-danger col-sm-8" role="alert" style="display: none;">
+                <strong>Fields can't be empty!</strong>
+                <br>Please, fill in all inputs!
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-center bcol fcol fixed-bottom mt-3 py-2">
+                <span>WebSocket Realtime Chat</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

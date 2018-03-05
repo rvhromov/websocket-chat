@@ -1,0 +1,17 @@
+.bcol {
+    background-color:tomato;
+}
+.fcol {
+    color:cornsilk;
+}
+.messages {
+    overflow-y: auto;
+    top:0;
+    bottom:3em;
+    min-height: 300px;
+    height: 600px;
+    width: 98%;
+    border: 1px solid tomato;
+    background-color: cornsilk;
+    border-radius: 12px;
+}
