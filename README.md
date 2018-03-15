@@ -1,5 +1,4 @@
 # Websocket Chat
-***
 
 Websocket Chat on Golang.
 
