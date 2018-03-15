@@ -1,5 +1,6 @@
 $(document).ready(function () {
     var ws, user;
+	
     // check if browser supports WebSocket
     if (window.WebSocket === undefined) {
         $('#messages').append("Your browser does not support WebSockets");
